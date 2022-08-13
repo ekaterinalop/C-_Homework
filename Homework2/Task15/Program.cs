@@ -1,17 +1,34 @@
-﻿Console.WriteLine("введите цифру, соответствующую дню недели от 1 до 7");
-int day = Convert.ToInt32(Console.ReadLine());
+﻿using System;
 
-void Weekend (int day)
- {
-  if (day == 6)
+class Program
+{
+ 
+  static void Week()
   {
-  Console.WriteLine("этот день выходной");
+    string[] nameDays = {"Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"};
+    for (int i = 0; i < nameDays.Length-1; i++)
+    {
+      Console.Write(i+1 + " - " + nameDays[i] + ", ");
+    }
+    Console.Write(nameDays.Length + " -" + nameDays[nameDays.Length-1] + ".");
+    Console.WriteLine(" Выберите день недели, напишите цифру");
   }
-  else if (day == 7) 
+  static void Main(string[] args)
   {
-    Console.WriteLine("этот день выходной");
+    Week();
+    int day = Convert.ToInt32(Console.ReadLine());
+    if (day == 6)
+    {
+      Console.WriteLine("этот день выходной");
+    }
+    else if (day == 7) 
+      {
+        Console.WriteLine("этот день выходной");
+      }
+      else 
+      Console.WriteLine("этот день рабочий");
+      
+    
   }
-   else Console.WriteLine("этот день рабочий");
+
 }
-
-Weekend(day);
