@@ -11,7 +11,7 @@ class Program
         string number = Console.ReadLine();
         string[] result ={"да","нет"};
 
-        if ((number[0]==number[4])&(number[0]==number[4]))
+        if ((number[0]==number[4])&(number[1]==number[3]))
         {
             Console.WriteLine(result[0]);
         }
