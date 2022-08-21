@@ -19,7 +19,7 @@ class Program
 
     static void Main(string[] args)
     {    
-        Console.WriteLine("введите число элементов массива N:");
+        Console.WriteLine("введите число элементов массива N (от 0до9):");
         int N = Convert.ToInt32(Console.ReadLine());
 
         //создаем генератор случайных чисел
