@@ -19,17 +19,18 @@ class Program
 
     static void Main(string[] args)
     {    
-       Console.WriteLine("введите число элементов массива N:");
-       int N = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("введите число элементов массива N:");
+        int N = Convert.ToInt32(Console.ReadLine());
 
+        //создаем генератор случайных чисел
+        var rand = new Random();
+                
+        int[] array = new int[N];
 
-       int[] array = new int[N];
-
-       for (int i = 0; i < N; i++)
-       {
-            Console.WriteLine("введите элементы массива");
-            array[i] = Convert.ToInt32(Console.ReadLine());
-       }
+        for (int i = 0; i < N; i++)
+        {
+            array[i] = rand.Next(10); // случайное число от 0 до 9
+        }
 
         PrintArray (array);
     }
