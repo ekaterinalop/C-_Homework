@@ -19,9 +19,9 @@ class Program
 
     static void Main(string[] args)
     {    
+
        Console.WriteLine("введите число элементов массива N:");
        int N = Convert.ToInt32(Console.ReadLine());
-
 
        int[] array = new int[N];
 
